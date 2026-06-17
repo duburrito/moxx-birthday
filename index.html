@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Moxxi's Birthday-a-thon</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="moon"></div>
+  <div class="bat bat-1">🦇</div>
+  <div class="bat bat-2">🦇</div>
+  <div class="bat bat-3">🦇</div>
+
+  <div class="scanlines"></div>
+  <div class="glitch-flash"></div>
+  <div class="fog fog-1"></div>
+  <div class="fog fog-2"></div>
+  <div class="embers" id="embers"></div>
+  <div class="vignette"></div>
+
+  <header class="hero">
+    <p class="eyebrow">The ritual has begun...</p>
+    <h1>Moxxi's Birthday-a-thon</h1>
+    <p class="subtitle">Survive the stream. Unlock the rituals. Summon the birthday chaos.</p>
+
+    <div class="hero-buttons">
+      <a href="#" class="btn primary">Watch on Twitch</a>
+      <a href="#" class="btn secondary">Donate / Support</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel">
+      <p class="section-kicker">The Offering Ladder</p>
+      <h2>Birthday Rituals</h2>
+      <div class="goal-grid" id="goals"></div>
+    </section>
+
+    <section class="panel stretch">
+      <p class="section-kicker">Past the Final Door</p>
+      <h2>Beyond the Veil</h2>
+      <div class="goal-grid" id="stretchGoals"></div>
+    </section>
+
+    <section class="panel">
+      <p class="section-kicker">For Those Who Feed the Flame</p>
+      <h2>Offerings</h2>
+      <div class="card-grid" id="incentives"></div>
+    </section>
+
+    <section class="panel">
+      <p class="section-kicker">The Honored Few</p>
+      <h2>The Chosen Three</h2>
+      <div class="card-grid">
+        <div class="card prize">
+          <h3>1st Top Donator</h3>
+          <p>Discord role, chooses first song cover, personal note in mail if you donated any bits &lt;3</p>
+        </div>
+        <div class="card prize">
+          <h3>2nd Top Donator</h3>
+          <p>Discord role and shout out in chat.</p>
+        </div>
+        <div class="card prize">
+          <h3>3rd Top Donator</h3>
+          <p>Discord role.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <p class="section-kicker">Tonight's Summonings</p>
+      <h2>Games Within The Fog</h2>
+      <div class="game-grid" id="games"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Happy Birthday-a-thon, Moxxi 🖤</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
