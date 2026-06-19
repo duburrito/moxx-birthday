@@ -92,3 +92,26 @@ renderGoals("stretchGoals", stretchGoals);
 renderIncentives();
 renderGames();
 createEmbers();
+
+const anniversaryCode = "0224";
+let typedCode = "";
+
+const secretModal = document.getElementById("secretModal");
+const secretClose = document.getElementById("secretClose");
+
+document.addEventListener("keydown", (event) => {
+  typedCode += event.key.toLowerCase();
+
+  if (typedCode.length > anniversaryCode.length) {
+    typedCode = typedCode.slice(-anniversaryCode.length);
+  }
+
+  if (typedCode === anniversaryCode) {
+    secretModal.classList.remove("hidden");
+    typedCode = "";
+  }
+});
+
+secretClose.addEventListener("click", () => {
+  secretModal.classList.add("hidden");
+});
